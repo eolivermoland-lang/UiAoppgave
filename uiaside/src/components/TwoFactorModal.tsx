@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Smartphone, KeyRound, Loader2, ShieldCheck, AlertCircle, Zap } from 'lucide-react';
+import { X, Loader2, ShieldCheck, AlertCircle, Zap } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 
 interface TwoFactorModalProps {

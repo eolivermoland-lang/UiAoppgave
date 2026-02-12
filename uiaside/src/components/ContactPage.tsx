@@ -1,6 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import { PhoneCall, Mail, MapPin, Clock, ArrowLeft, MessageSquare, Globe } from 'lucide-react';
+import { PhoneCall, Mail, MapPin, Clock, ArrowLeft } from 'lucide-react';
 
 interface ContactPageProps {
   onBack: () => void;

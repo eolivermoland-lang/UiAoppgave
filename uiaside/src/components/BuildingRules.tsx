@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Ruler, Home, Construction, ArrowLeft, Info, CheckCircle2, ShieldAlert } from 'lucide-react';
+import { Ruler, Home, Construction, ArrowLeft, ShieldAlert } from 'lucide-react';
 
 interface BuildingRulesProps {
   onBack: () => void;

@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
-  User, Settings, FileText, Clock, 
-  ChevronRight, ArrowLeft, LogOut, 
+  User, Settings, FileText, 
+  ArrowLeft, LogOut, 
   Map as MapIcon, CheckCircle2, ShieldCheck,
-  Bell, Lock, Save, FolderOpen, Smartphone, Loader2
+  Save, FolderOpen, Smartphone, Loader2
 } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 import TwoFactorModal from './TwoFactorModal';

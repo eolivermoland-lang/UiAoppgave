@@ -8,7 +8,7 @@ import {
 
 interface LandingPageProps {
   onStart: () => void;
-  onNavigate: (view: 'rules' | 'guidance' | 'contact' | 'guide') => void;
+  onNavigate: (view: 'rules' | 'guidance' | 'contact' | 'guide' | 'profile') => void;
   onLogin: () => void;
   isLoggedIn: boolean;
 }

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
-  Check, X, HelpCircle, ArrowRight, RotateCcw, 
-  MapPin, Ruler, Home, Users, AlertTriangle, 
+  HelpCircle, ArrowRight, RotateCcw, 
+  MapPin, Ruler, Home, Users, 
   FileCheck, ShieldAlert, Waves, TrainFront, LandPlot, Car
 } from 'lucide-react';
 

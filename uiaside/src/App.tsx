@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Map as MapIcon, Bell, MapPin, Cpu, ShieldCheck, ArrowLeft, LogOut, User } from 'lucide-react';
+import { Map as MapIcon, MapPin, Cpu, ArrowLeft, User } from 'lucide-react';
 import { supabase } from './lib/supabase';
 import MapComponent from './components/MapComponent';
 import QuestionsWizard from './components/QuestionsWizard';
@@ -166,7 +166,7 @@ function App() {
 
             <main className="flex-1 flex overflow-hidden">
               <div className="flex-1 relative bg-slate-100">
-                <MapComponent onShapeCreated={setMeasurement} center={mapCenter} showBoundaries={showBoundaries} isSatellite={false} />
+                <MapComponent onShapeCreated={setMeasurement} center={mapCenter} showBoundaries={showBoundaries} />
                 <div className="absolute bottom-10 right-10 z-[1000] flex flex-col gap-3">
                   <button
                     onClick={() => setShowBoundaries(!showBoundaries)}

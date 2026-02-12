@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Users, Calendar, Video, MapPin, CheckCircle2, Info, ArrowRight } from 'lucide-react';
+import { ArrowLeft, Users, Calendar, Video, CheckCircle2, Info, ArrowRight } from 'lucide-react';
 
 interface GuidancePageProps {
   onBack: () => void;
