@@ -2,6 +2,7 @@
   "name": "uiaaoppgave",
   "compatibility_date": "2026-02-12",
   "assets": {
-    "directory": "./uiaside/dist"
+    "directory": "./uiaside/dist",
+    "not_found_handling": "single-page-application"
   }
 }
