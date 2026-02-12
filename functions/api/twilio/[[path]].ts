@@ -23,18 +23,26 @@ export const onRequest: PagesFunction = async ({ request }) => {
 
   try {
     const headers = new Headers(request.headers);
+    // Remove headers that should be set by the fetch call or that might conflict
     headers.delete('Host');
     headers.delete('Origin');
     headers.delete('Referer');
+    headers.delete('CF-Connecting-IP');
+    headers.delete('CF-Ray');
+    headers.delete('CF-Visitor');
 
-    const newRequest = new Request(targetUrl, {
+    const requestInit: RequestInit = {
       method: request.method,
       headers: headers,
-      body: request.method !== 'GET' && request.method !== 'HEAD' ? await request.arrayBuffer() : null,
       redirect: 'follow'
-    });
+    };
 
-    const response = await fetch(newRequest);
+    // Only add body for methods that support it
+    if (!['GET', 'HEAD'].includes(request.method)) {
+      requestInit.body = await request.arrayBuffer();
+    }
+
+    const response = await fetch(targetUrl, requestInit);
     
     // Create new response to inject CORS headers
     const newResponse = new Response(response.body, response);

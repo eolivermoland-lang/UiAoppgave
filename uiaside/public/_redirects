@@ -1,2 +1,6 @@
 /api/* /api/* 200
-/* /index.html 200
+/guide /index.html 200
+/rules /index.html 200
+/guidance /index.html 200
+/contact /index.html 200
+/profile /index.html 200
