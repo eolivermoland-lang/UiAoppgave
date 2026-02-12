@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* EKSTREMT TYDELIG STYLING FOR MÅLINGER */
+.leaflet-pm-tooltip, .pm-snippet, .leaflet-marker-icon.pm-measurement, .custom-measure-tooltip {
+  background-color: #000000 !important; /* Svart boks */
+  border: 2px solid #ffffff !important; /* Hvit kant */
+  color: #ffffff !important; /* Hvit tekst */
+  font-weight: 900 !important;
+  font-size: 16px !important; /* Litt større tekst */
+  padding: 8px 15px !important;
+  border-radius: 8px !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5) !important;
+  white-space: nowrap !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+  z-index: 20000 !important;
+}
+
+.custom-measure-tooltip::before {
+  display: none !important; /* Fjern den lille pilen */
+}
+
+/* Sørger for at teksten inni er hvit */
+.leaflet-pm-tooltip div, .pm-snippet div {
+  color: white !important;
+}
+
+/* Husnumre */
+.housenumber-label {
+  background: white !important;
+  border: 2px solid #00FF00 !important;
+  border-radius: 6px !important;
+  padding: 2px 6px !important;
+  font-weight: 900 !important;
+  font-size: 11px !important;
+  color: #0f172a !important;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1) !important;
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
